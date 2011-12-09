@@ -15,6 +15,9 @@
 		C41581301490522800F9503C /* UpdatedFetcherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C415812F1490522800F9503C /* UpdatedFetcherAppDelegate.m */; };
 		C41581331490522800F9503C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C41581311490522800F9503C /* MainStoryboard.storyboard */; };
 		C41581361490522800F9503C /* UpdatedFetcherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41581351490522800F9503C /* UpdatedFetcherViewController.m */; };
+		C415813D14905C4600F9503C /* buttonbeta.png in Resources */ = {isa = PBXBuildFile; fileRef = C415813C14905C4600F9503C /* buttonbeta.png */; };
+		C43C368814909426009440D6 /* Compose Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = C43C368714909426009440D6 /* Compose Controller.m */; };
+		C4D0AA4A14919946000B392F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D0AA4914919946000B392F /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,19 @@
 		C415811F1490522800F9503C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C41581211490522800F9503C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C41581231490522800F9503C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C41581271490522800F9503C /* UpdatedFetcher-Info.plist */ = {isa = PBXFileReference; path = "UpdatedFetcher-Info.plist"; sourceTree = "<group>"; };
+		C41581271490522800F9503C /* UpdatedFetcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UpdatedFetcher-Info.plist"; sourceTree = "<group>"; };
 		C41581291490522800F9503C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C415812B1490522800F9503C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C415812D1490522800F9503C /* UpdatedFetcher-Prefix.pch */ = {isa = PBXFileReference; path = "UpdatedFetcher-Prefix.pch"; sourceTree = "<group>"; };
-		C415812E1490522800F9503C /* UpdatedFetcherAppDelegate.h */ = {isa = PBXFileReference; path = UpdatedFetcherAppDelegate.h; sourceTree = "<group>"; };
+		C415812D1490522800F9503C /* UpdatedFetcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UpdatedFetcher-Prefix.pch"; sourceTree = "<group>"; };
+		C415812E1490522800F9503C /* UpdatedFetcherAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdatedFetcherAppDelegate.h; sourceTree = "<group>"; };
 		C415812F1490522800F9503C /* UpdatedFetcherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdatedFetcherAppDelegate.m; sourceTree = "<group>"; };
 		C41581321490522800F9503C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		C41581341490522800F9503C /* UpdatedFetcherViewController.h */ = {isa = PBXFileReference; path = UpdatedFetcherViewController.h; sourceTree = "<group>"; };
+		C41581341490522800F9503C /* UpdatedFetcherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdatedFetcherViewController.h; sourceTree = "<group>"; };
 		C41581351490522800F9503C /* UpdatedFetcherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdatedFetcherViewController.m; sourceTree = "<group>"; };
+		C415813C14905C4600F9503C /* buttonbeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonbeta.png; sourceTree = "<group>"; };
+		C43C368614909426009440D6 /* Compose Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Compose Controller.h"; sourceTree = "<group>"; };
+		C43C368714909426009440D6 /* Compose Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Compose Controller.m"; sourceTree = "<group>"; };
+		C4D0AA4914919946000B392F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D0AA4A14919946000B392F /* CFNetwork.framework in Frameworks */,
 				C41581201490522800F9503C /* UIKit.framework in Frameworks */,
 				C41581221490522800F9503C /* Foundation.framework in Frameworks */,
 				C41581241490522800F9503C /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +58,7 @@
 		C41581101490522800F9503C = {
 			isa = PBXGroup;
 			children = (
+				C4D0AA4914919946000B392F /* CFNetwork.framework */,
 				C41581251490522800F9503C /* UpdatedFetcher */,
 				C415811E1490522800F9503C /* Frameworks */,
 				C415811C1490522800F9503C /* Products */,
@@ -80,6 +89,9 @@
 				C415812E1490522800F9503C /* UpdatedFetcherAppDelegate.h */,
 				C415812F1490522800F9503C /* UpdatedFetcherAppDelegate.m */,
 				C41581311490522800F9503C /* MainStoryboard.storyboard */,
+				C43C368614909426009440D6 /* Compose Controller.h */,
+				C43C368714909426009440D6 /* Compose Controller.m */,
+				C415813C14905C4600F9503C /* buttonbeta.png */,
 				C41581341490522800F9503C /* UpdatedFetcherViewController.h */,
 				C41581351490522800F9503C /* UpdatedFetcherViewController.m */,
 				C41581261490522800F9503C /* Supporting Files */,
@@ -151,6 +163,7 @@
 			files = (
 				C415812A1490522800F9503C /* InfoPlist.strings in Resources */,
 				C41581331490522800F9503C /* MainStoryboard.storyboard in Resources */,
+				C415813D14905C4600F9503C /* buttonbeta.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +177,7 @@
 				C415812C1490522800F9503C /* main.m in Sources */,
 				C41581301490522800F9503C /* UpdatedFetcherAppDelegate.m in Sources */,
 				C41581361490522800F9503C /* UpdatedFetcherViewController.m in Sources */,
+				C43C368814909426009440D6 /* Compose Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +251,10 @@
 		C415813A1490522800F9503C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UpdatedFetcher/UpdatedFetcher-Prefix.pch";
 				INFOPLIST_FILE = "UpdatedFetcher/UpdatedFetcher-Info.plist";
@@ -248,6 +266,10 @@
 		C415813B1490522800F9503C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UpdatedFetcher/UpdatedFetcher-Prefix.pch";
 				INFOPLIST_FILE = "UpdatedFetcher/UpdatedFetcher-Info.plist";
@@ -275,6 +297,7 @@
 				C415813B1490522800F9503C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

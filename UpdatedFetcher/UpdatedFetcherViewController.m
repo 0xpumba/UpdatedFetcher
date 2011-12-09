@@ -9,6 +9,9 @@
 #import "UpdatedFetcherViewController.h"
 
 @implementation UpdatedFetcherViewController
+@synthesize displayData;
+@synthesize mySpinner;
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +29,10 @@
 
 - (void)viewDidUnload
 {
+    [self setDisplayData:nil];
+    [self setDisplayData:nil];
+    [self setDisplayData:nil];
+    [self setMySpinner:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -38,6 +45,7 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
+    [mySpinner stopAnimating];
     [super viewDidAppear:animated];
 }
 
@@ -57,4 +65,34 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)fetchData:(id)sender {
+    
+    [mySpinner startAnimating];
+    
+    dispatch_queue_t downloadQueue = dispatch_queue_create("text downloader", NULL);
+    
+    
+    dispatch_async(downloadQueue, ^ {
+        
+        NSURL *myURL = [NSURL URLWithString:@"http://76.246.4.168/foo.txt"];
+        NSData *textData = [NSData dataWithContentsOfURL:myURL];
+    
+        NSString *myReturnedText = [[NSString alloc] initWithData:textData encoding:NSUTF8StringEncoding];
+
+        
+        dispatch_async(dispatch_get_main_queue(), ^ {
+            [mySpinner stopAnimating];
+            
+            
+            
+            displayData.text = myReturnedText;
+        });
+        
+    });
+    dispatch_release(downloadQueue );
+
+    
+}
+
+    
 @end

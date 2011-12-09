@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface UpdatedFetcherViewController : UIViewController
+- (IBAction)fetchData:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextView *displayData;
+
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *mySpinner;
 
 @end
